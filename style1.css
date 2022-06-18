@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+*{font-family:'Shrikhand', cursive;}
+    
+*{font-family:'Roboto', sans-serif;}
+
+*{box-sizing: border-box;}
+
+.header_contenneur
+{
+    display:flex;
+    justify-content: center;
+}
+
+.logo
+{
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    align-self: center;
+}
+
+
+#presentation
+{
+    background-color:#f6f6f6;
+    height: 300px;
+
+}
+
+.localisation
+{
+    background-color:#eaeaea;
+    border: none;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+
+}
+.localisation i
+{
+    padding: 9px 0px 5px 10px;
+}
+
+.recherche
+{
+    background-color:#eaeaea;
+    border:none;
+    text-align: center;
+}
+
+.rechercher
+{
+    border-radius: 25px;
+    background-color:#d56bda ;
+    color: white;
+    height: 50px;
+    border:none;
+    padding: 15px
+}
+
+.description
+{
+    text-align: -webkit-center;
+}
+
+.p_description
+{
+    width: 300px;
+}
+
+h1
+{
+    max-width: 330px;
+}
+
+.fonctionnement
+{
+    margin-left: 10px;
+}
+
+.etapes_fonctionnement
+{
+    list-style-type: none;
+    width:400px;
+    padding-left:20px
+    
+}
+
+.etapes_fonctionnement li
+{
+    display: flex;
+    height:90px;
+    border-radius:25px;
+    background-color:#eaeaea;
+    box-shadow:0px 10px 10px 0px #f6f6f6 ;
+    justify-content:space-around;
+    margin:10px;
+    position:relative;
+
+}
+
+.etapes_fonctionnement li h2
+{
+    align-self:center;
+    font-size: 18px;
+}
+
+.numéro
+{
+    border-radius: 50px;
+    background-color: #9356dc;
+    color:#fff;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-self:center;
+    position:absolute;
+    left:-10px;
+}
+
+.ul i
+{
+    align-content: center;
+}
+
+.fonctionnement i
+{
+    align-self: center;
+    position:absolute;
+    left:40px
+}
+
+.card_resto a
+{
+    text-decoration: none;
+}
+
+.card_resto
+{
+    height: 230px;
+    width: 380px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0px 5px 20px #999;
+    margin-bottom: 30px;
+
+}
+
+ .card_resto p
+{
+    font-size:18px;
+    margin:3px 0px 0px 0px;
+
+}
+
+.card_resto h2
+{
+    margin:5px 0px 0px 0px;
+}
+
+.nom_resto
+{
+    color:black;
+    margin-left:20px;
+    position:relative;
+
+}
+
+.coeur
+{
+    position:absolute;
+    right:70px;
+    font-size:xx-large;
+}
+
+.coeur1
+{
+    position: absolute;
+    bottom:15px;
+    /* right:6px */
+}
+
+.coeur2
+{
+    position:absolute;
+    top:-50px;
+    /* right:6px; */
+}
+
+.coeur3
+{
+    position:absolute;
+    bottom:15px;
+}
+
+.coeur4
+{
+    position: absolute;
+    top: -50px;
+    /* right: 6px; */
+}
+
+.photo_resto
+{
+    height: 150px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px
+
+}
+
+.liste_restaurants
+{
+    background-color:#f6f6f6;
+    margin-top:50px;
+    height:1150px
+}
+
+.liste_restaurants h1
+{
+    padding-top:30px
+}
+
+#restaurants
+{
+    margin-left: 20px;
+}
+
+footer
+{
+    background-color: #353535;
+    color:#fff;
+    height: 200px;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding-top:10px;
+    margin:0px
+}
+
+footer h2
+{
+    font-family:'Shrikhand', cursive;
+    font-weight:medium;
+}
+
+footer p
+{
+    margin:3px
+}
+
+.proposition
+{
+    display:flex
+}
+
+.proposition i
+{
+    margin-right:10px
+}
+
+/*DEBUT média queries*/
+
+@media screen and (max-width: 992px) /*tablette*/
+{
+ .etapes_fonctionnement
+    {
+    }
+      
+}
+
+@media screen and (min-width: 768px)/*desktop*/
+{
+    .etapes_fonctionnement
+    {
+        list-style-type: none;
+        padding-left:20px;
+        display:flex;
+        flex-direction: row;
+        width: 1200px;
+    }
+
+    .etapes_fonctionnement li
+    {
+        width: 2500px;
+    }
+
+    .liste_restaurants
+    {
+        max-height:750px
+    }
+
+    #restaurants
+    {
+        column-count: 2;
+        column-gap: 600px;
+        height: 650px;
+
+    }
+
+    .card_resto
+    {
+        margin:0px
+    }
+}
