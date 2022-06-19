@@ -77,14 +77,14 @@ h1
 
 .fonctionnement
 {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .etapes_fonctionnement
 {
     list-style-type: none;
     width:400px;
-    padding-left:20px
+    padding-left:0px
     
 }
 
@@ -268,47 +268,88 @@ footer p
 
 /*DEBUT média queries*/
 
-@media screen and (min-width: 992px) /*tablette*/
-{
-      
-}
-
-@media screen and (min-width: 768px)/*desktop*/
+@media screen and (min-width: 768px)/*tablette*/
 {
     .etapes_fonctionnement
     {
-        list-style-type: none;
-        padding-left:20px;
-        display:flex;
-        flex-direction: row;
-        width: 1200px;
-    }
-
-    .instruction
-    {
-        display: flex;
-        justify-content: center;
+        flex-direction: column;
+        width: 730px;
+        padding: 0px;
     }
 
     .etapes_fonctionnement li
     {
-        width: 2500px;
+        width: 100%;
+    }
+
+    .all_cards
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .liste_restaurants
+  {
+      height: 1300px;
+  }
+
+  #restaurants
+  {
+      height: 1300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  .card_resto
+  {
+      width: 730px;
+  }
+
+  .photo_resto
+  {
+      width: 730px;
+  }
+
+  .coeur1,.coeur2
+  {
+      right:50%
+  }
+
+  .coeur3,.coeur4
+  {
+      right: 6px;
+  }
+
+  footer
+  {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+
+  footer ul
+  {
+      column-count: 3;
+      display:contents;
+      align-items: center;
+  }
+
+}
+
+@media screen and (min-width: 992px) /*desktop*/
+{
+    .etapes_fonctionnement
+    {
+        display: flex;
+        flex-direction:row;
+        width: 100%;
     }
 
     .liste_restaurants
     {
-        max-height:750px
-    }
-
-    #restaurants
-    {
-        height: 650px;
-    }
-
-    .all_cards
-    {
-        column-count: 2;
-        column-gap: 80px;
+        height:750px
     }
 
     .card_resto
@@ -324,9 +365,18 @@ footer p
         height: 170px;
     }
 
-    #restaurants h1
+
+    .all_cards
     {
-        margin-bottom: 30px 0px;
+      column-count: 2;
+      column-gap: 80px;
+      display: block;
+    }
+  
+    #restaurants
+    {
+        height: 1200px;
+        justify-content: normal;
     }
 
     .coeur1
@@ -349,19 +399,14 @@ footer p
         right:20px
     }
 
-    footer
-    {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-    }
 
 
-    footer ul
-    {
-        column-count: 3;
-        display:contents;
-        align-items: center;
-    }
+
+
 
 }
+
+
+
+
+
