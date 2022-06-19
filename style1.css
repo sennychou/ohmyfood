@@ -58,7 +58,8 @@
     color: white;
     height: 50px;
     border:none;
-    padding: 15px
+    padding: 15px;
+    width: 200px;
 }
 
 .description
@@ -407,7 +408,7 @@ footer p
 
 .main_menu1
 {
-    height:1650px
+    height:1500px
 }
 
 .photo_accueil
@@ -433,7 +434,7 @@ footer p
     border-radius: 25px 25px 0px 0px;
     position:absolute;
     top:300px;
-    height:1446px;
+    height:1300px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -443,6 +444,12 @@ footer p
 {
     background-color: #fff;
     border-radius: 25px;
+    padding: 0px 10px 0px 10px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
 }
 
 .bouton_commander
@@ -450,6 +457,7 @@ footer p
     display: flex;
     justify-content: center;
 }
+
 
 .fleche
 {
@@ -470,7 +478,44 @@ footer p
 .titre_menu h1
 {
     font-family:'Shrikhand',cursive;
+}
 
+.souligne
+{
+    border-bottom:#99E2D0 3px solid ;
+    width: 50px;
+}
+
+#assiettes h2
+{
+    margin-bottom: 10px;
+}
+
+.entrees,.plats,.desserts
+{
+    margin-bottom:40px
+}
+
+.details_menu
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.details_menu p
+{
+    margin-top: 0px;
+}
+
+.cardmenu h3
+{
+    margin-bottom: 5px;
+}
+
+.prix
+{
+    font-weight: bold;
 }
 
 
