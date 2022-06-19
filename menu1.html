@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css3/normalize.css"/>
+    <link rel="stylesheet" href="css3/style1.css"/>
+    <script src="https://kit.fontawesome.com/038c58bc5c.js" crossorigin="anonymous"></script>
     <title>A la française</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="imagesomf/ohmyfood.png">
+        <div class="header_contenneur">
+            <i class="fa-solid fa-arrow-left"></i>
+            <img class="logo" src="imagesomf/ohmyfood.png" alt="logo">
+        </div>
     </header>
 
     <main>
-        <section>
+        <section class="photo_accueil">
             <img class="photo_plat" src="imagesomf/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/>
         </section>
 
-        <section>
+        <section class="menu">
             <div class="titre_menu">
                 <h1>A la française</h1>
                 <i class="fa-thin fa-heart"></i>
@@ -86,11 +92,13 @@
                         </div>
                 </div>
             </section>
+
+        <div class="bouton_commander">
+            <button type="submit"  class="rechercher">Explorez nos restaurants</button>
+        </div>
+    
         </section>
         
-        <div>
-        <button type="submit"  class="rechercher">Commander</button>
-        </div>
 
     </main>
 
