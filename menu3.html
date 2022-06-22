@@ -4,109 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La palette du goût</title>
+    <link rel="stylesheet" href="css3/normalize.css"/>
+    <link rel="stylesheet" href="css3/style1.css"/>
+    <script src="https://kit.fontawesome.com/038c58bc5c.js" crossorigin="anonymous"></script>
+    <title>Le délice des sens</title>
 </head>
 <body>
     <header>
-        <img class="logo" src="imagesomf/ohmyfood.png">
+        <div class="header_contenneur">
+            <div class="fleche">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <img class="logo" src="imagesomf/ohmyfood.png" alt="logo">
+        </div>
     </header>
 
-    <main>
-        <section>
-            <img class="photo_plat" src="imagesomf/toa-heftiba-DQKerTsQwi0-unsplash.jpg"/>
+    <main class="main_menu1">
+        <section class="photo_accueil">
+            <img class="photo_plat" src="imagesomf/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"/>
         </section>
 
-        <section>
+        <section class="menu">
             <div class="titre_menu">
-                <h1>La palette du goût</h1>
-                <i class="fa-thin fa-heart"></i>
+                <h1>Le délice des sens</h1>
+                <div class="favoris">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
             </div>
 
             <section id="assiettes">
                 <div class="entrees">
                     <h2>ENTREES</h2>
+                    <div class="souligne"></div>
                     <div class="cardmenu">
-                        <h3>Fricassée d'escargot</h3>
-                        <p>Au piment d'Espelette </p>
-                        <p>25€</p>
+                        <h3>Tartare de thon</h3>
+                        <div class="details_menu">
+                            <p>Assaisonné au yuzu </p>
+                            <p class="prix">25€</p>
+                    </div>
                     </div>
 
                     <div class="cardmenu">
-                        <h3>Foie gras de canard mi-cuit</h3>
-                        <p>Et ses copeaux de truffe noire</p> 
-                        <p>35€</p>
+                        <h3>Bouchée de homard croustillant</h3>
+                        <div class="details_menu">
+                            <p>Et sa farandole de petits légumes</p> 
+                            <p class="prix">35€</p>
+                        </div>
                     </div>
 
                     <div class="cardmenu">
-                        <h3>Oeuf au plat</h3>
-                        <p>Assaisonné à la truffe sur lit de caviar</p>
-                        <p>20€</p>
+                        <h3>Velouté de cèpes</h3>
+                        <div class="details_menu">
+                            <p>Aux truffes</p>
+                            <p class="prix">20€</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="plats">
                     <h2>PLATS</h2>
+                    <div class="souligne"></div>
                     <div class="cardmenu">
-                        <h3>Filet de boeuf aux herbes</h3>
-                        <p>Accompagné de sa ribambelle de légumes</p>
-                        <p>40€</p>
+                        <h3>Poulet rôti aux herbes de Provence </h3>
+                        <div class="details_menu">
+                            <p>Et sa crème de truffe</p>
+                            <p class="prix">40€</p>
+                        </div>
                     </div>
 
                     <div class="cardmenu">
-                        <h3>Parmentier de queue de boeuf</h3>
-                        <p>À la truffe noire sur sa purée de panais </p>
-                        <p>35€</p>
+                        <h3>Langouste rôtie </h3>
+                        <div class="details_menu">
+                            <p>Et ses légumes de saison</p>
+                            <p class="prix">35€</p>
+                        </div>
                     </div>
 
                     <div class="cardmenu">
-                        <h3>Filet de turbot</h3>
-                        <p>Aux agrumes</p>
-                        <p>44€</p>
+                        <h3>Côte de boeuf Angus </h3>
+                        <div class="details_menu">
+                            <p>Et sa purée de panais</p>
+                            <p class="prix">44€</p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="desserts">
                         <h2>DESSERTS</h2>
+                        <div class="souligne"></div>
                         <div class="cardmenu">
-                            <h3>Paris-Brest</h3>
-                            <p>Revisité</p>
-                            <p>18€</p>
+                            <h3>Farandole de desserts</h3>
+                            <div class="details_menu">
+                                <p>Du chef</p>
+                                <p class="prix">18€</p>
+                            </div>
                         </div>
 
                         <div class="cardmenu">
-                            <h3>Macaron au chocolat d'exception</h3>
-                            <p>Et glace à la vanille de Madagascar</p>
-                            <p>22€</p>
+                            <h3>Crème brulée</h3>
+                            <div class="details_menu">
+                                <p>Revisité</p>
+                                <p class="prix">22€</p>
+                            </div>
                         </div>
 
                         <div class="cardmenu">
-                            <h3>Mousse au chocolat</h3>
-                            <p>Au piment d'Espelette et à la truffe noire</p>
-                            <p>23€</p>
+                            <h3>Tiramisu</h3>
+                            <div class="details_menu">
+                                <p>À la noisette</p>
+                                <p class="prix">23€</p>
+                            </div>
                         </div>
                 </div>
             </section>
+
+        <div class="bouton_commander">
+            <button type="submit"  class="rechercher">Commander</button>
+        </div>
+    
         </section>
         
-        <div>
-        <button type="submit"  class="rechercher">Commander</button>
-        </div>
 
     </main>
 
     <footer>
-        <h2>ohmyfood</h2>
         <ul>
-            <div>
-                <li><i class="fa-thin fa-utensils"></i><p>Proposer un restaurant</p></li>
-            </div>
-            <div>
-                <li><i class="fa-thin fa-handshake-angle"></i><p>Devenir partenaire</p></li>
-            </div>
+            <li><h2>ohmyfood</h2></li>
+            <li>
+                <div class="proposition">
+                    <i class="fa-solid fa-bowl-rice"></i><p>Proposer un restaurant</p>
+                </div>
+            </li>
+            <li>
+                <div class="proposition">
+                    <i class="fa-solid fa-handshake-angle"></i><p>Devenir partenaire</p>
+                </div>
+            </li>
             <li>Mentions légales</li>
             <li>Contact</li>
         </ul>
     </footer>
-
 </body>
 </html>
