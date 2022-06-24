@@ -177,8 +177,13 @@ h1
 {
     color:black;
     margin-left:20px;
-    position:relative;
+    /* position:relative; */
 
+}
+
+.heart
+{
+    display:none;
 }
 
 .coeur
@@ -255,7 +260,7 @@ footer ul
 footer h2
 {
     font-family:'Shrikhand', cursive;
-    font-weight:medium;
+    font-weight:bold;
 }
 
 footer p
@@ -273,10 +278,6 @@ footer p
     margin-right:10px
 }
 
-.coeur:hover
-{
-font-weight: bold;
-}
 
 .loader
 {
@@ -293,12 +294,12 @@ font-weight: bold;
     height: 100vh;
     inset:0;
     line-height: 500px;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     font-family:'Shrikhand', cursive;
-    animation: disparition 200ms forwards 3s;
+    animation: disparition 300ms forwards 1s;
     transform-origin: bottom;
 }
 
@@ -337,14 +338,26 @@ font-weight: bold;
 
 @keyframes spin
 {
-    0% {transform:rotate (0deg);}
-    100% {transform:rotate(360deg)}
+    0% 
+    {
+        transform:rotate(0deg);
+    }
+    100% 
+    {
+        transform:rotate(360deg);
+    }
 }
 
 @keyframes disparition
 {
-    0% { transform: scale(1);}
-    100% {transform:scale(0)}
+    0% 
+    { 
+        transform: scale(1);
+    }
+    100% 
+    {
+        transform:scale(0);
+    }
 }
 
 
@@ -488,7 +501,7 @@ font-weight: bold;
     font-weight: bold;
 }
 
-@keyframes appear
+@keyframes appear /*appartition menu*/
 {
     0% 
     {
@@ -569,6 +582,11 @@ font-weight: bold;
       right: 6px;
   }
 
+  .heart
+  {
+    display:none;
+  }
+
   footer
   {
       display: flex;
@@ -616,7 +634,7 @@ font-weight: bold;
     {
         height: 250px;
         width: 550px;
-        margin-left:20px
+        margin-left:20px;
     }
 
     .photo_resto
@@ -652,23 +670,93 @@ font-weight: bold;
 
     .coeur1
     {
-        right:730px
+        right: 730px;
+        top:-74px;
+    }
+
+    .coeur1bis
+    {
+        position: absolute;
+        bottom: -393px;
+        left:517px;
     }
 
     .coeur2
     {
-        right:730px
+        right:730px;
+        top:-71px;
+    }
+
+    .coeur2bis
+    {
+        position: absolute;
+        left:517px;
+        bottom:-676px;
     }
 
     .coeur3
     {
-        right:20px
+        right:20px;
+        bottom:54px;
+    }
+
+    .coeur3bis
+    {
+        position: absolute;
+        bottom:54px;
+        right:20px;
     }
 
     .coeur4
     {
-        right:20px
+        right:20px;
+        top:-71px;
     }
 
+    .coeur4bis
+    {
+        position: absolute;
+        right:90px;
+        top:1264px;
+    }
+
+
+    .heart:hover
+    {
+        animation: coco 1s forwards;
+    }
+
+    .heart
+    {
+        display:inline-block;
+        color:#9356dc;
+        /* right:730px;
+        bottom:15px; */
+        z-index:1;
+        font-size: xx-large;
+        opacity: 0;
+    }
+
+
+    .fa-solid.fa-heart /*coeur1bis-full*/
+    {
+        font-weight: 900;
+    }
+
+}
+
+@keyframes coco
+{
+    0%
+    {
+        transform:scale (0);
+        opacity: 0;
+    }
+
+    100%
+    {
+        transform:scale (1);
+        opacity:1;
+    }
 }
 
