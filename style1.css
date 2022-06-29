@@ -55,7 +55,7 @@
 {
     border-radius: 25px;
     box-shadow: 0px 5px 30px #999;
-    background-color:#d56bda ;
+    background-image: linear-gradient(to top,#9356DC, #FF79DA );
     color: white;
     height: 50px;
     border:none;
@@ -336,6 +336,17 @@ footer p
     animation: spin 1s linear 0s infinite ;
 }
 
+.nouveau1,.nouveau2
+{
+    width: 90px;
+    height:25px;
+    background:#99E2D0;
+    color:green;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+}
+
 @keyframes spin
 {
     0% 
@@ -521,8 +532,22 @@ footer p
     font-weight: bold;
 }
 
-.coche
+.fa-solid.fa-check
+{
+    border-radius: 25px;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    color: #99E2D0;
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+}
 
+.coche
 {
     background-color: #99E2D0;
     height: 80px;
@@ -537,19 +562,17 @@ footer p
     /* animation: 1s ease-in 300ms reverse both running ; */
 }
 
-.fa-solid.fa-check
+
+.favoriscoeur
 {
-    border-radius: 25px;
-    background-color: #fff;
-    height: 30px;
-    width: 30px;
-    justify-content: center;
-    text-align: center;
-    margin-top: 20px;
-    color: #99E2D0;
-    display: flex;
-    flex-direction: column;
-    font-weight: 900;
+    position:relative;
+    align-self: center;
+}
+
+ .heartbis
+{
+    position:absolute;
+    bottom:19px;
 }
 
 .cardmenu:hover .coche
@@ -752,7 +775,23 @@ footer p
     .cardmenu
     {
         width: 350px;
+        position:relative;
     }
+
+    .nouveau1
+    {
+        position:absolute;
+        bottom:-283px;
+        left:476px
+    }
+
+    .nouveau2
+    {
+        position:absolute;
+        bottom:-560px;
+        left:476px
+    }
+
   
     #restaurants
     {
@@ -769,54 +808,54 @@ footer p
 
     .coeur1
     {
-        right: 730px;
+        right: 607px;
         top:-74px;
     }
 
     .coeur1bis
     {
         position: absolute;
-        bottom: -393px;
+        bottom: -454px;
         left:517px;
     }
 
     .coeur2
     {
-        right:730px;
+        right:610px;
         top:-71px;
     }
 
     .coeur2bis
     {
         position: absolute;
-        left:517px;
-        bottom:-676px;
+        left:515px;
+        bottom:-738px;
     }
 
     .coeur3
     {
-        right:20px;
-        bottom:54px;
+        right:-53px;
+        bottom:39px;
     }
 
     .coeur3bis
     {
         position: absolute;
-        bottom:54px;
-        right:20px;
+        bottom:-452px;
+        right:17px;
     }
 
     .coeur4
     {
-        right:20px;
+        right:-53px;
         top:-71px;
     }
 
     .coeur4bis
     {
         position: absolute;
-        right:90px;
-        top:1264px;
+        right:17px;
+        top:1254px;
     }
 
 
@@ -828,20 +867,27 @@ footer p
     .heart
     {
         display:inline-block;
-        color:#9356dc;
+        /* color:transparent; */
+        /* background-image: -webkit-linear-gradient(red,blue);
+        -moz-background-clip: text;
+        -webkit-background-clip: text; */
         /* right:730px;
         bottom:15px; */
         z-index:1;
         font-size: xx-large;
         opacity: 0;
-    }
+        /* background-clip:text;
+        background-image: linear-gradient(red,blue); */
+     }
 
 
     .fa-solid.fa-heart /*coeur1bis-full*/
     {
-        font-weight: 900;
+        font-weight: 800;
+        color:transparent;
+        -webkit-background-clip:text;
+        background-image: linear-gradient(to top,#9356DC,#FF79DA);
     }
-
 }
 
 @keyframes coco
