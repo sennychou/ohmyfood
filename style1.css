@@ -930,7 +930,7 @@ footer p
     0%
     {
         transform:scale (0);
-        opacity: 0;
+        opacity:0;
     }
 
     100%
