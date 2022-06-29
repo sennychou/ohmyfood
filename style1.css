@@ -347,6 +347,20 @@ footer p
     border-radius: 3px;
 }
 
+.nouveau1
+{
+    position:absolute;
+    bottom: -200px;
+    right: 27px;
+}
+
+.nouveau2
+{
+    position: absolute;
+    right: 27px;
+    bottom: -460px;
+}
+
 @keyframes spin
 {
     0% 
@@ -376,15 +390,16 @@ footer p
 
 /*Style page menu*/
 
+
 .main_menu1
 {
-    height:1500px
+    height:1650px
 }
 
-.photo_accueil
+/* .photo_accueil
 {
     position: relative
-}
+} */
 
 .photo_plat
 {
@@ -405,7 +420,7 @@ footer p
     border-radius: 25px 25px 0px 0px;
     position:absolute;
     top:300px;
-    height:1300px;
+    height:1427px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -646,6 +661,10 @@ footer p
 @media screen and (min-width: 768px)/*tablette*/
 {
 
+    .menu
+    {
+        height:1460px;
+    }
     .etapes_fonctionnement
     {
         flex-direction: column;
@@ -675,12 +694,16 @@ footer p
       height: 1300px;
   }
 
+  .liste_restaurants h1
+  {
+    padding: 30px 0px;
+  }
+
   #restaurants
   {
       height: 1300px;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
   }
 
   .card_resto
@@ -692,6 +715,18 @@ footer p
   {
       width: 730px;
   }
+
+  .nouveau1
+  {
+    bottom: 81px;
+    right: 60px;
+  }
+
+ .nouveau2
+ {
+    bottom: -181px;
+    right: 60px;
+ }
 
   .coeur1,.coeur2
   {
@@ -742,12 +777,12 @@ footer p
 
     .menu
     {
-        height:600px
+        height:635px
     }
 
     .main_menu1
     {
-        height:700px
+        height:780px
     }
 
 
@@ -781,14 +816,14 @@ footer p
     .nouveau1
     {
         position:absolute;
-        bottom:-283px;
+        bottom:-315px;
         left:476px
     }
 
     .nouveau2
     {
         position:absolute;
-        bottom:-560px;
+        bottom:-594px;
         left:476px
     }
 
@@ -815,7 +850,7 @@ footer p
     .coeur1bis
     {
         position: absolute;
-        bottom: -454px;
+        bottom:-484px;
         left:517px;
     }
 
@@ -829,7 +864,7 @@ footer p
     {
         position: absolute;
         left:515px;
-        bottom:-738px;
+        bottom:-768px;
     }
 
     .coeur3
@@ -841,7 +876,7 @@ footer p
     .coeur3bis
     {
         position: absolute;
-        bottom:-452px;
+        bottom:-482px;
         right:17px;
     }
 
@@ -855,7 +890,7 @@ footer p
     {
         position: absolute;
         right:17px;
-        top:1254px;
+        top:1284px;
     }
 
 
