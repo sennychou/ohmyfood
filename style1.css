@@ -26,7 +26,7 @@
 #presentation
 {
     background-color:#f6f6f6;
-    height: 300px;
+    /* height: 300px; */
 
 }
 
@@ -181,16 +181,24 @@ h1
 
 }
 
-.heart
+/* .heart
 {
     display:none;
+} */
+
+.fa-solid.fa-check
+{
+    display:none
 }
 
 .coeur
 {
-    position:absolute;
-    right:70px;
-    font-size:xx-large;
+    position: absolute;
+    right: 70px;
+    bottom: 40px;
+    font-size: xx-large;
+    height: 25px;
+    width: 25px;
 }
 
 .coeur1
@@ -230,7 +238,7 @@ h1
 {
     background-color:#f6f6f6;
     margin-top:50px;
-    height:1150px
+    /* height:1150px */
 }
 
 .liste_restaurants h1
@@ -357,8 +365,8 @@ footer p
 .nouveau2
 {
     position: absolute;
-    right: 27px;
-    bottom: -460px;
+    /* right: 27px;
+    bottom: -460px; */
 }
 
 @keyframes spin
@@ -691,7 +699,7 @@ footer p
   
   .liste_restaurants
   {
-      height: 1300px;
+      /* height: 1300px; */
   }
 
   .liste_restaurants h1
@@ -701,7 +709,7 @@ footer p
 
   #restaurants
   {
-      height: 1300px;
+      /* height: 1300px; */
       display: flex;
       flex-direction: column;
   }
@@ -772,7 +780,7 @@ footer p
 
     .liste_restaurants
     {
-        height:750px
+        /* height:750px */
     }
 
     .menu
@@ -791,6 +799,7 @@ footer p
         height: 250px;
         width: 550px;
         margin-left:20px;
+        position:relative;
     }
 
     .photo_resto
@@ -803,7 +812,7 @@ footer p
     .all_cards
     {
       column-count: 2;
-      column-gap: 80px;
+      column-gap: 40px;
       display: block;
     }
 
@@ -813,24 +822,25 @@ footer p
         position:relative;
     }
 
-    .nouveau1
+    .nouveau1,.nouveau2
     {
-        position:absolute;
-        bottom:-315px;
-        left:476px
-    }
+        position: absolute;
+        /* bottom: -315px; */
+        /* left: 476px; */
+        bottom: 169px;
+        right: auto;    }
 
     .nouveau2
     {
-        position:absolute;
+        /* position:absolute;
         bottom:-594px;
-        left:476px
+        left:476px */
     }
 
   
     #restaurants
     {
-        height: 0px;
+        /* height: 0px; */
         justify-content: normal;
     }
 
@@ -843,16 +853,17 @@ footer p
 
     .coeur1
     {
-        right: 607px;
-        top:-74px;
+        /* right: 607px;
+        top:-74px; */
+        right:0px
     }
 
-    .coeur1bis
+    /* .coeur1bis
     {
         position: absolute;
         bottom:-484px;
         left:517px;
-    }
+    } */
 
     .coeur2
     {
@@ -894,12 +905,12 @@ footer p
     }
 
 
-    .heart:hover
+    .fa-solid.fa-heart:hover
     {
         animation: coco 1s forwards;
     }
 
-    .heart
+    .fa-solid.fa-heart
     {
         display:inline-block;
         /* color:transparent; */
@@ -922,6 +933,8 @@ footer p
         color:transparent;
         -webkit-background-clip:text;
         background-image: linear-gradient(to top,#9356DC,#FF79DA);
+        position: absolute;
+        top:1px;
     }
 }
 
@@ -929,13 +942,13 @@ footer p
 {
     0%
     {
-        transform:scale (0);
+        transform: scale (0);
         opacity:0;
     }
 
     100%
     {
-        transform:scale (1);
+        transform: scale (1);
         opacity:1;
     }
 }
