@@ -26,8 +26,6 @@
 #presentation
 {
     background-color:#f6f6f6;
-    /* height: 300px; */
-
 }
 
 .localisation
@@ -183,14 +181,8 @@ h1
 {
     color:black;
     margin-left:20px;
-    /* position:relative; */
 
 }
-
-/* .heart
-{
-    display:none;
-} */
 
 .fa-solid.fa-check
 {
@@ -200,40 +192,12 @@ h1
 .coeur
 {
     position: absolute;
-    /* right: 70px;
-    bottom: 40px;
-    font-size: xx-large;
-    height: 25px;
-    width: 25px; */
     right: 34px;
     bottom: 39px;
     font-size: xx-large;
 }
 
 
-/* .coeur1
-{
-    position: absolute;
-    bottom:15px;
-}
-
-.coeur2
-{
-    position:absolute;
-    top:-50px;
-}
-
-.coeur3
-{
-    position:absolute;
-    bottom:15px;
-}
-
-.coeur4
-{
-    position: absolute;
-    top: -50px;
-} */
 
 .photo_resto
 {
@@ -248,7 +212,6 @@ h1
 {
     background-color:#f6f6f6;
     margin-top:50px;
-    /* height:1150px */
 }
 
 .liste_restaurants h1
@@ -368,19 +331,6 @@ footer p
     bottom: 140px;
 }
 
-/* .nouveau1
-{
-    position:absolute;
-    bottom: -200px;
-    right: 27px;
-}
-
-.nouveau2
-{
-    position: absolute;
-    /* right: 27px;
-    bottom: -460px; 
-} */
 
 @keyframes spin
 {
@@ -416,11 +366,6 @@ footer p
 {
     height:1650px
 }
-
-/* .photo_accueil
-{
-    position: relative
-} */
 
 .photo_plat
 {
@@ -538,7 +483,6 @@ footer p
 
 .details_menu
 {
-    /* display: flex; */
     justify-content: space-between;
     overflow: hidden;
     padding-right: 5px;
@@ -587,15 +531,12 @@ footer p
 {
     background-color: #99E2D0;
     height: 80px;
-    /* margin-top: 20px; */
     width: 60px;
     border-radius: 0 25px 25px 0;
     display: flex;
     justify-content: center;
     margin-right: -60px;
     transition: margin-right 1s;
-    /* display:none; */
-    /* animation: 1s ease-in 300ms reverse both running ; */
 }
 
 
@@ -605,11 +546,11 @@ footer p
     align-self: center;
 }
 
- .heartbis
+ /* .heartbis
 {
     position:absolute;
     bottom:19px;
-}
+} */
 
 .cardmenu:hover .coche
 {
@@ -660,20 +601,6 @@ footer p
     }
 }
 
-/* @keyframes slidein
-{
-    0%
-    {
-        transform: scale(0);
-    }
-
-    100%
-    {
-        transform: scale(1);
-
-    }
-} */
-
 
 
 
@@ -710,10 +637,6 @@ footer p
     align-items: center;
   }
   
-  .liste_restaurants
-  {
-      /* height: 1300px; */
-  }
 
   .liste_restaurants h1
   {
@@ -722,7 +645,6 @@ footer p
 
   #restaurants
   {
-      /* height: 1300px; */
       display: flex;
       flex-direction: column;
   }
@@ -737,32 +659,6 @@ footer p
       width: 730px;
   }
 
-  /* .nouveau1
-  {
-    bottom: 81px;
-    right: 60px;
-  }
-
- .nouveau2
- {
-    bottom: -181px;
-    right: 60px;
- } */
-
-  /* .coeur1,.coeur2
-  {
-      right:50%
-  }
-
-  .coeur3,.coeur4
-  {
-      right: 6px;
-  }
-
-  .heart
-  {
-    display:none;
-  } */
 
   footer
   {
@@ -793,11 +689,6 @@ footer p
         display: flex;
         flex-direction:row;
         width: 100%;
-    }
-
-    .liste_restaurants
-    {
-        /* height:750px */
     }
 
     .menu
@@ -842,23 +733,11 @@ footer p
     .nouveau1,.nouveau2
     {
         position: absolute;
-        /* bottom: -315px; */
-        /* left: 476px; */
         bottom: 170px;
-        /* right: auto;     */
     }
 
-    .nouveau2
-    {
-        /* position:absolute;
-        bottom:-594px;
-        left:476px */
-    }
-
-  
     #restaurants
     {
-        /* height: 0px; */
         justify-content: normal;
     }
 
@@ -869,84 +748,17 @@ footer p
         justify-content: space-between;
     }
 
-    /* .coeur1
-    {
-        /* right: 607px;
-        top:-74px; */
-        /* right:0px
-    } */
-
-    /* .coeur1bis
-    {
-        position: absolute;
-        bottom:-484px;
-        left:517px;
-    } */
-
-    /* .coeur2
-    {
-        right:610px;
-        top:-71px;
-    }
-
-    .coeur2bis
-    {
-        position: absolute;
-        left:515px;
-        bottom:-768px;
-    }
-
-    .coeur3
-    {
-        right:-53px;
-        bottom:39px;
-    }
-
-    .coeur3bis
-    {
-        position: absolute;
-        bottom:-482px;
-        right:17px;
-    }
-
-    .coeur4
-    {
-        right:-53px;
-        top:-71px;
-    }
-
-    .coeur4bis
-    {
-        position: absolute;
-        right:17px;
-        top:1284px;
-    } */ 
-
-
     .fa-solid.fa-heart:hover
     {
-        animation: coco 1s forwards;
+        animation: coco 200ms forwards;
     }
-
-    .fa-solid.fa-heart
-    {
-        display:inline-block;
-        /* color:transparent; */
-        /* background-image: -webkit-linear-gradient(red,blue);
-        -moz-background-clip: text;
-        -webkit-background-clip: text; */
-        /* right:730px;
-        bottom:15px; */
-        z-index:1;
-        font-size: xx-large;
-        opacity: 0;
-        /* background-clip:text;
-        background-image: linear-gradient(red,blue); */
-     }
-
 
     .fa-solid.fa-heart /*coeur1bis-full*/
     {
+        display:inline-block;
+        z-index:1;
+        font-size: xx-large;
+        opacity: 0;
         font-weight: 800;
         color:transparent;
         -webkit-background-clip:text;
@@ -954,20 +766,21 @@ footer p
         position: absolute;
         top:1px;
         right: 0px;
-    }
+     }
+
 }
 
 @keyframes coco
 {
     0%
     {
-        transform: scale (0);
+        transform: scale(0);
         opacity:0;
     }
 
     100%
     {
-        transform: scale (1);
+        transform: scale(1);
         opacity:1;
     }
 }
